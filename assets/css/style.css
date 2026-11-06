@@ -1,0 +1,73 @@
+/* Variables : couleurs et polices du site, à adapter */
+:root {
+  --fond: #fafaf8;
+  --texte: #1d1d1b;
+  --texte-doux: #5c5c58;
+  --accent: #2f5d50;
+  --accent-texte: #ffffff;
+  --bordure: #e3e3de;
+  --police: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --largeur: 72rem;
+  --rayon: 0.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--police);
+  line-height: 1.6;
+  color: var(--texte);
+  background: var(--fond);
+}
+
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--accent); }
+
+h1, h2, h3 { line-height: 1.2; }
+
+.container {
+  width: 100%;
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header { border-bottom: 1px solid var(--bordure); }
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+.logo { font-weight: 700; text-decoration: none; color: var(--texte); }
+
+.hero { padding: 5rem 0; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 1rem; }
+.hero p { color: var(--texte-doux); font-size: 1.125rem; }
+
+.bouton {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--rayon);
+  background: var(--accent);
+  color: var(--accent-texte);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer {
+  border-top: 1px solid var(--bordure);
+  padding: 2rem 0;
+  color: var(--texte-doux);
+  font-size: 0.875rem;
+}
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
