@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.groupe-aveli.fr/sitemap.xml
+Sitemap: https://groupe-aveli.fr/sitemap.xml
