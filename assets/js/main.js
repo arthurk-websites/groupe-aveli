@@ -8,57 +8,6 @@
   toggle.addEventListener("click", function () { setMenu(mnav.hidden); });
   mnav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
 
-  // Gold and blue ribbons behind the two trades, echoing the waves of the logo.
-  (function () {
-  var canvas = document.getElementById("ribbons");
-  if (!canvas) return;
-  var ctx = canvas.getContext("2d");
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var RIBBONS = [
-    { y: 0.20, amp: 0.07, k: 1.6, ph: 0.4, th: 0.035, a: 0.16, c0: "230,201,139", c1: "196,154,78" },
-    { y: 0.24, amp: 0.06, k: 1.7, ph: 0.9, th: 0.022, a: 0.12, c0: "120,150,214", c1: "43,67,121" },
-    { y: 0.86, amp: 0.05, k: 1.3, ph: 2.2, th: 0.03, a: 0.12, c0: "230,201,139", c1: "196,154,78" }
-  ];
-  function draw(t) {
-    var w = canvas.clientWidth, h = canvas.clientHeight;
-    ctx.clearRect(0, 0, w, h);
-    RIBBONS.forEach(function (r, i) {
-      var phase = r.ph + (reduce ? 0 : t * 0.00012 * (i % 2 ? -1 : 1));
-      var steps = 80, top = [], bot = [];
-      for (var s = 0; s <= steps; s++) {
-        var x = (s / steps) * w;
-        var u = s / steps;
-        var yc = h * r.y + Math.sin(u * Math.PI * r.k + phase) * h * r.amp;
-        var thick = h * r.th * (0.25 + 0.75 * Math.sin(u * Math.PI));
-        top.push([x, yc - thick / 2]); bot.push([x, yc + thick / 2]);
-      }
-      var g = ctx.createLinearGradient(0, 0, w, 0);
-      g.addColorStop(0, "rgba(" + r.c0 + ",0)");
-      g.addColorStop(0.4, "rgba(" + r.c0 + "," + r.a + ")");
-      g.addColorStop(0.75, "rgba(" + r.c1 + "," + (r.a * 0.9) + ")");
-      g.addColorStop(1, "rgba(" + r.c1 + ",0)");
-      ctx.beginPath();
-      ctx.moveTo(top[0][0], top[0][1]);
-      top.forEach(function (p) { ctx.lineTo(p[0], p[1]); });
-      for (var j = bot.length - 1; j >= 0; j--) ctx.lineTo(bot[j][0], bot[j][1]);
-      ctx.closePath(); ctx.fillStyle = g; ctx.fill();
-    });
-  }
-  function size() {
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    canvas.width = Math.round(canvas.clientWidth * dpr);
-    canvas.height = Math.round(canvas.clientHeight * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  }
-  size(); draw(0);
-  var visible = false;
-  if ("IntersectionObserver" in window && !reduce) {
-    new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; }).observe(canvas);
-    (function loop(t) { if (visible) draw(t); requestAnimationFrame(loop); })(0);
-  }
-  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { size(); draw(performance.now()); }, 120); });
-  })();
-
   // Quote form: five fields, a recap the visitor can copy and send.
   (function () {
     var form = document.getElementById("quote-form");
@@ -131,29 +80,6 @@
     });
   })();
 
-  // Floating contact panel
-  (function () {
-    var fab = document.getElementById("contact-fab");
-    var panel = document.getElementById("contact-panel");
-    var status = document.getElementById("panel-status");
-    function setOpen(open) {
-      panel.hidden = !open; fab.setAttribute("aria-expanded", String(open)); status.textContent = "";
-      if (open) document.getElementById("panel-close").focus(); else fab.focus();
-    }
-    fab.addEventListener("click", function () { setOpen(panel.hidden); });
-    document.getElementById("panel-close").addEventListener("click", function () { setOpen(false); });
-    document.getElementById("panel-quote").addEventListener("click", function () { panel.hidden = true; fab.setAttribute("aria-expanded", "false"); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) setOpen(false); });
-    document.addEventListener("click", function (e) { if (!panel.hidden && !panel.contains(e.target) && !fab.contains(e.target)) { panel.hidden = true; fab.setAttribute("aria-expanded", "false"); } });
-    panel.querySelectorAll(".copy").forEach(function (b) {
-      b.addEventListener("click", function () {
-        var text = b.getAttribute("data-copy");
-        function fallback() { var v = b.parentNode.querySelector(".v"); var r = document.createRange(); r.selectNodeContents(v); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r); status.textContent = "Sélectionné : copiez avec Ctrl+C (ou ⌘+C)."; }
-        try { if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { status.textContent = "Copié : " + text; }, fallback); else fallback(); } catch (err) { fallback(); }
-      });
-    });
-  })();
-
   // Mobile action bar: steps aside while the quote form or the footer is on screen.
   (function () {
     var bar = document.getElementById("mobile-bar");
@@ -164,6 +90,16 @@
       bar.classList.toggle("away", seen.size > 0);
     }, { threshold: 0, rootMargin: "0px 0px -40% 0px" });
     io.observe(document.getElementById("devis"));
+  })();
+
+  // Sections fade in gently as they scroll into view.
+  (function () {
+    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var items = document.querySelectorAll(".block .head, .trade, .sector, .figure, .stage, .dept, .promise, .faq details, .served, .duo figure");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    items.forEach(function (el) { el.classList.add("reveal"); io.observe(el); });
   })();
 
   document.getElementById("year").textContent = String(new Date().getFullYear());

@@ -22,8 +22,11 @@ ton, couleurs, polices, coordonnées, pages prévues, ce qui reste à compléter
 - Coordonnées : 09 80 86 81 66, contact@groupe-aveli.fr, lun.–sam. 8 h–19 h.
 - Domaine : groupe-aveli.fr (acheté chez OVH, DNS chez OVH, site sur Vercel ; www redirige vers groupe-aveli.fr). Le site prestige-nettoyage.fr
   reste en ligne à part : ne pas le rediriger.
-- Design : ivoire, bleu marine (#112550) et or (#C49A4E) ; polices Cormorant Garamond
-  (titres) et Montserrat (texte).
+- Design (refonte de novembre 2026) : fond papier clair (#FBFAF7) et sable (#F3EFE7), bleu
+  marine (#13244A) réservé à la zone devis et au pied de page, or (#B8893D) en simple accent.
+  Polices Newsreader (titres) et Figtree (texte). Style sobre et « naturel » : pas d'icônes
+  décoratives, pas de titres en majuscules espacées, pas de mot en italique doré dans les
+  titres, pas de logo 3D. En-tête = nom en texte + téléphone + bouton devis.
 - Pages : accueil + 39 pages « entreprise-de-nettoyage-<ville> » (13, 83, 06, 84, 34, 69),
   chacune avec un texte propre à la ville. En ajoutant une ville : mettre à jour la liste
   de l'accueil (section Territoire), le bloc des villes en bas de toutes les pages, les
