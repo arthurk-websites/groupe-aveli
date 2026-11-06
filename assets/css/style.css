@@ -450,8 +450,7 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
   .sector { padding-right: 24px; }
   .sector:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line); }
   .hero-grid, .head, .quote { grid-template-columns: minmax(0, 1fr); }
-  .logo-stage { order: -1; }
-  .logo-stage img { max-width: 420px; }
+  .logo-stage { display: none; }
   .trade-grid, .territory { grid-template-columns: minmax(0, 1fr); }
   .trade, .trade + .trade { padding: 40px 0 16px; border-left: 0; }
   .trade + .trade { border-top: 1px solid var(--navy-line); }
