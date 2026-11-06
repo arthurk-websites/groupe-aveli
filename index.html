@@ -1,36 +1,525 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Groupe Aveli</title>
-  <meta name="description" content="Groupe Aveli : site en construction.">
-  <meta property="og:title" content="Groupe Aveli">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="/assets/js/main.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Groupe Aveli · Blanchisserie et propreté du Rhône à la Méditerranée</title>
+
+<meta name="description" content="Groupe Aveli, blanchisserie et propreté du Rhône à la Méditerranée : blanchisserie professionnelle, propreté de locaux, particuliers et professionnels, produits éco-responsables. Bouches-du-Rhône, Var, Alpes-Maritimes, Vaucluse, Hérault, Rhône.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Groupe Aveli · Blanchisserie et propreté du Rhône à la Méditerranée">
+<meta property="og:description" content="Groupe Aveli, blanchisserie et propreté du Rhône à la Méditerranée : blanchisserie professionnelle, propreté de locaux, particuliers et professionnels, produits éco-responsables. Bouches-du-Rhône, Var, Alpes-Maritimes, Vaucluse, Hérault, Rhône.">
+<meta property="og:locale" content="fr_FR">
+<link rel="canonical" href="https://www.groupe-aveli.fr/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Groupe Aveli", "description": "Blanchisserie professionnelle et propreté de locaux pour les entreprises, les hôtels, les campings, les locations saisonnières et les particuliers.", "telephone": "+33 9 80 86 81 66", "email": "contact@groupe-aveli.fr", "areaServed": [{"@type": "AdministrativeArea", "name": "Bouches-du-Rhône (13)"}, {"@type": "AdministrativeArea", "name": "Var (83)"}, {"@type": "AdministrativeArea", "name": "Alpes-Maritimes (06)"}, {"@type": "AdministrativeArea", "name": "Vaucluse (84)"}, {"@type": "AdministrativeArea", "name": "Hérault (34)"}, {"@type": "AdministrativeArea", "name": "Rhône (69)"}], "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "19:00"}, "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Blanchisserie professionnelle"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage de locaux"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage des hôtels"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nettoyage de campings"}}]}</script>
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap">
+
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="/">Groupe Aveli</a>
+<header class="site-header band">
+  <div class="wrap">
+    <div class="header-row">
+      <a class="brand" href="#accueil" aria-label="Groupe Aveli, accueil">
+        <img src="/assets/img/ffd10c9ee733.jpg" alt="" width="180" height="103">
+        <span class="brand-text"><span class="brand-word">AVELI</span><span class="brand-sub">Blanchisserie &amp; Propreté</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#metiers">Métiers</a>
+        <a href="#secteurs">Secteurs</a>
+        <a href="#references">Références</a>
+        <a href="#territoire">Territoire</a>
+        <a href="#carrieres">Carrières</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-navy header-cta" href="#devis">Devis gratuit</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg>
+      </button>
     </div>
-  </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile" hidden>
+      <a href="#metiers">Métiers</a>
+      <a href="#secteurs">Secteurs</a>
+      <a href="#references">Références</a>
+      <a href="#territoire">Territoire</a>
+      <a href="#carrieres">Carrières</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-navy" href="#devis">Demander un devis gratuit</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Groupe Aveli</h1>
-        <p>Site en construction.</p>
+<main id="accueil">
+  <!-- Hero -->
+  <section class="hero ivory band" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="label rule rise">Groupe Aveli · Du Rhône à la Méditerranée</p>
+          <h1 id="hero-title" class="rise d1">Du linge impeccable, des lieux <em>irréprochables</em>.</h1>
+          <p class="motto rise d2">Pour des espaces plus sains au quotidien.</p>
+          <p class="lead rise d2">Blanchisserie professionnelle et propreté de locaux pour les entreprises, les hôtels, les campings, les locations saisonnières et les particuliers, en Provence, sur la Côte d'Azur, dans l'Hérault et dans le Rhône.</p>
+          <div class="hero-actions rise d3">
+            <a class="btn btn-navy" href="#devis">Demander un devis gratuit
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-line" href="#metiers">Nos métiers</a>
+          </div>
+        </div>
+        <div class="logo-stage rise d1">
+          <img src="/assets/img/89dc8d49f522.jpg" alt="Logo Groupe Aveli, Blanchisserie &amp; Propreté" width="800" height="697">
+        </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span data-annee></span> Groupe Aveli</p>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M20 9a2.6 2.6 0 1 1 2.6 2.6c-1 0-2.6.6-2.6 2v1.4"/><path d="M20 15 7 21.5 9.5 24l3-1.5V33h15V22.5l3 1.5 2.5-2.5L20 15z"/></svg></span>
+          <h3>Blanchisserie<br>professionnelle</h3>
+          <p>Linge hôtelier, restauration, locations saisonnières et vêtements de travail.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="7" width="13" height="26"/><rect x="22" y="15" width="9" height="18"/><path d="M13 12h5M13 17h5M13 22h5M13 27h5M25 20h3M25 25h3"/></svg></span>
+          <h3>Propreté<br>de locaux</h3>
+          <p>Bureaux, copropriétés, commerces, fins de chantier et vitrerie.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M7 19 20 8l13 11"/><path d="M11 16v17h18V16"/><path d="M17 33v-9h6v9"/></svg></span>
+          <h3>Particuliers<br>&amp; professionnels</h3>
+          <p>Du studio à la villa, de la boutique au siège social.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M31 9C17 9 9 15 9 26c0 2 .4 3.6 1 5 12 0 21-6 21-22z"/><path d="M10 31c4-7 9-12 16-16"/></svg></span>
+          <h3>Produits<br>éco-responsables</h3>
+          <p>Des produits choisis pour respecter les personnes, les matières et l'environnement.</p>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <!-- Two trades -->
+  <section class="block trades navy band" id="metiers" aria-labelledby="metiers-title">
+    <canvas id="ribbons" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">Nos métiers</p>
+          <h2 id="metiers-title">Deux métiers, <em>une même exigence</em>.</h2>
+        </div>
+        <p>Le linge et les lieux se répondent : un hôtel, une location saisonnière ou une résidence ont besoin des deux. Avec Groupe Aveli, un seul interlocuteur s'en occupe.</p>
+      </div>
+      <div class="trade-grid">
+        <article class="trade">
+          <figure class="photo trade-photo"><img src="/assets/img/7260c1230822.jpg" alt="Pile de linge blanc plié, porté par un membre du personnel d'hôtel" width="1200" height="750"></figure>
+          <div class="trade-k"><h3>La <em>blanchisserie</em></h3><span class="for">Collecte &amp; livraison</span></div>
+          <p>Lavage, séchage, repassage et pliage de votre linge, collecté chez vous et rendu prêt à l'emploi.</p>
+          <ul class="offers">
+            <li><b>Hôtels, campings &amp; restauration</b><span>Draps, housses, taies, linge de bain, nappes et serviettes de table, collectés et livrés au rythme de vos séjours.</span></li>
+            <li><b>Locations saisonnières</b><span>Linge de lit et de bain entre deux voyageurs, coordonné avec le ménage du logement.</span></li>
+            <li><b>Vêtements de travail</b><span>Tenues, blouses et vestes de cuisine, lavées et repassées selon leur matière.</span></li>
+            <li><b>Linge des particuliers</b><span>Couettes, rideaux, linge délicat et repassage au quotidien.</span></li>
+          </ul>
+        </article>
+        <article class="trade">
+          <figure class="photo trade-photo"><img src="/assets/img/965dd5a7d8fc.jpg" alt="Hall d'hôtel en marbre, lumineux et impeccable" width="1200" height="750"></figure>
+          <div class="trade-k"><h3>La <em>propreté</em></h3><span class="for">Locaux &amp; logements</span></div>
+          <p>Entretien régulier ou intervention ponctuelle, selon un cahier des charges écrit avec vous.</p>
+          <ul class="offers">
+            <li><b>Bureaux &amp; commerces</b><span>Postes de travail, sanitaires, salles de réunion, vitrines et espaces d'accueil.</span></li>
+            <li><b>Hôtels &amp; campings</b><span>Chambres, hébergements et mobil-homes entre deux séjours, sanitaires, accueil et espaces communs.</span></li>
+            <li><b>Copropriétés</b><span>Halls, escaliers, ascenseurs, vitrages d'entrée et sortie des conteneurs.</span></li>
+            <li><b>Villas &amp; logements</b><span>Ménage régulier, ouverture de saison, état des lieux de fin de bail.</span></li>
+            <li><b>Fin de chantier &amp; vitrerie</b><span>Poussières fines, traces de travaux, baies vitrées et façades vitrées.</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section class="block ivory band" id="secteurs" aria-labelledby="secteurs-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">Nos secteurs</p>
+          <h2 id="secteurs-title">Des solutions adaptées <em>à chaque besoin</em>.</h2>
+        </div>
+        <p>Une gamme complète de services de nettoyage professionnel pour tous les secteurs d'activité, de l'hôtel au camping, du chantier à la salle de classe.</p>
+      </div>
+      <div class="duo">
+        <figure class="photo"><img src="/assets/img/f4802aa70bf7.jpg" alt="Chambre d'hôtel au linge blanc impeccable" width="1200" height="800"><figcaption>Hôtellerie</figcaption></figure>
+        <figure class="photo"><img src="/assets/img/9b07d67245f5.jpg" alt="Bureaux lumineux et entretenus" width="1200" height="800"><figcaption>Bureaux &amp; sièges</figcaption></figure>
+      </div>
+      <div class="sectors">
+        <article class="sector"><span class="label">Chambres · espaces communs</span><h3>Nettoyage des hôtels</h3><p>Recouche et départs, chambres, salles de bains, couloirs, réception et salle de petit-déjeuner, au rythme de votre taux d'occupation.</p></article>
+        <article class="sector"><span class="label">Mobil-homes · sanitaires</span><h3>Campings</h3><p>Mobil-homes et chalets entre deux locations, blocs sanitaires, accueil et espaces aquatiques, renforts en haute saison.</p></article>
+        <article class="sector"><span class="label">Réceptions · salons</span><h3>Nettoyage événementiel</h3><p>Avant, pendant et après vos événements, sur des créneaux serrés, pour accueillir vos invités dans un lieu impeccable.</p></article>
+        <article class="sector"><span class="label">Bureaux · sièges</span><h3>Secteur tertiaire</h3><p>Entretien des bureaux et espaces de travail, sièges, administrations, secteurs financiers et assurances.</p></article>
+        <article class="sector"><span class="label">Sites · ateliers</span><h3>Nettoyage industriel</h3><p>Sites de production et locaux techniques, avec des méthodes adaptées aux contraintes de sécurité.</p></article>
+        <article class="sector"><span class="label">Écoles · espaces publics</span><h3>Collectivités &amp; écoles</h3><p>Établissements scolaires et lieux recevant du public, entretenus selon les règles d'hygiène en vigueur.</p></article>
+        <article class="sector"><span class="label">Magasins · enseignes</span><h3>Surfaces commerciales</h3><p>Boutiques, supermarchés et restaurants, entretenus en dehors des heures d'ouverture.</p></article>
+        <article class="sector"><span class="label">Immobilier · résidences</span><h3>Entretien d'immeubles</h3><p>Parties communes, halls et escaliers de résidences, entretenus pour les syndics et les bailleurs.</p></article>
+      </div>
+      <p class="also"><b>Et aussi</b><span>Nettoyage des postes informatiques</span><span>Traitement des parquets</span><span>Ponçage et cristallisation du marbre</span><span>Loisirs &amp; culture</span></p>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="block navy band" id="references" aria-labelledby="references-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">Nos références</p>
+          <h2 id="references-title">Des partenaires <em>exigeants</em>.</h2>
+        </div>
+        <p>Entreprises locales, hôtels, enseignes nationales et institutions : chaque collaboration témoigne de notre engagement envers la qualité.</p>
+      </div>
+      <div class="figures">
+        <div class="figure"><b>10 ans</b><span>et plus d'expérience</span></div>
+        <div class="figure"><b>1 000</b><span>clients et plus</span></div>
+        <div class="figure"><b>24 h</b><span>pour vous répondre</span></div>
+        <div class="figure"><b>6 j / 7</b><span>du lundi au samedi</span></div>
+      </div>
+      <p class="label clients-title">Ils nous font confiance</p>
+      <ul class="clients">
+        <li><span>AXA<small>Assurance</small></span></li>
+        <li><span>MMA<small>Assurance</small></span></li>
+        <li><span>Bouygues Construction<small>BTP</small></span></li>
+        <li><span>The Originals<small>Hôtels &amp; resorts</small></span></li>
+        <li><span>Synergie<small>Emploi</small></span></li>
+        <li><span>Odalys Vacances<small>Résidences de tourisme</small></span></li>
+        <li><span>Groupe Accor<small>Hôtellerie</small></span></li>
+        <li><span>Ibis<small>Hôtellerie</small></span></li>
+        <li><span>Adagio<small>Appart'hôtels</small></span></li>
+        <li><span>Carrefour Market<small>Distribution</small></span></li>
+        <li><span>Les Mousquetaires<small>Distribution</small></span></li>
+        <li><span>Boulanger<small>Magasins</small></span></li>
+        <li><span>Foncia<small>Immobilier</small></span></li>
+        <li><span>CGTI by Camusat<small>Télécoms</small></span></li>
+      </ul>
+      <div class="strengths">
+        <div><h3>Expertise professionnelle</h3><p>Plus de dix ans auprès de clients variés et exigeants.</p></div>
+        <div><h3>Qualité supérieure</h3><p>Un engagement d'excellence et des résultats constants.</p></div>
+        <div><h3>Adaptabilité</h3><p>Des prestations construites sur mesure, pour chaque lieu.</p></div>
+        <div><h3>Fiabilité</h3><p>Une réputation bâtie sur la confiance de nos clients.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linen cycle -->
+  <section class="block ivory promises-band band" id="linge" aria-labelledby="linge-title">
+    <div class="wrap">
+      <div class="head head-photo">
+        <div>
+          <p class="label">Le linge</p>
+          <h2 id="linge-title">Le parcours de <em>votre linge</em>.</h2>
+          <p class="head-lead">Cinq étapes, du sac de linge sale au linge plié, prêt à être rangé ou posé sur le lit.</p>
+        </div>
+        <figure class="photo arch"><img src="/assets/img/2ade28465496.jpg" alt="Repassage d'un drap blanc" width="800" height="1000"></figure>
+      </div>
+      <ol class="cycle">
+        <li class="stage"><span class="dot">1</span><h3>Collecte</h3><p>Nous passons chez vous aux jours convenus, avec des sacs identifiés à votre nom.</p></li>
+        <li class="stage"><span class="dot">2</span><h3>Tri &amp; lavage</h3><p>Tri par couleur, matière et degré de salissure, lavage à la bonne température.</p></li>
+        <li class="stage"><span class="dot">3</span><h3>Séchage &amp; repassage</h3><p>Séchage adapté à chaque textile, repassage des draps, nappes et chemises.</p></li>
+        <li class="stage"><span class="dot">4</span><h3>Pliage</h3><p>Pliage soigné et conditionnement par lot, par chambre ou par logement.</p></li>
+        <li class="stage"><span class="dot">5</span><h3>Livraison</h3><p>Le linge revient propre et prêt à l'emploi, au moment où vous en avez besoin.</p></li>
+      </ol>
+      <p class="cycle-note"><span>Linge compté à l'enlèvement et à la livraison</span><span>Lessives éco-responsables</span><span>Délais convenus à l'avance</span></p>
+    </div>
+  </section>
+
+  <!-- Territory -->
+  <section class="block ivory band" id="territoire" aria-labelledby="territoire-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">Territoire</p>
+          <h2 id="territoire-title">Six départements, <em>du Rhône à la mer</em>.</h2>
+        </div>
+        <p>De Lyon à Menton, de Montpellier à Avignon : nos équipes interviennent dans six départements, en ville comme dans l'arrière-pays.</p>
+      </div>
+      <figure class="photo panorama"><img src="/assets/img/fd1b65dc1626.jpg" alt="Nice, la Promenade des Anglais et la baie des Anges" width="1600" height="610"><figcaption>Nice · la baie des Anges</figcaption></figure>
+      <div class="territory">
+        <div class="dept">
+          <div class="dept-num">13</div>
+          <p class="dept-name">Bouches-du-Rhône</p>
+          <p class="dept-coast">Des calanques au Pays d'Aix</p>
+          <ul>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-marseille">Marseille</a></span><span>13001–16</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-aix-en-provence">Aix-en-Provence</a></span><span>13090</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-aubagne">Aubagne</a></span><span>13400</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-cassis">Cassis</a></span><span>13260</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-la-ciotat">La Ciotat</a></span><span>13600</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-salon-de-provence">Salon-de-Provence</a></span><span>13300</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-gardanne">Gardanne</a></span><span>13120</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-meyreuil">Meyreuil</a></span><span>13590</span></li>
+          </ul>
+        </div>
+        <div class="dept">
+          <div class="dept-num">83</div>
+          <p class="dept-name">Var</p>
+          <p class="dept-coast">De la rade de Toulon à l'Estérel</p>
+          <ul>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-toulon">Toulon</a></span><span>83000</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-hyeres">Hyères</a></span><span>83400</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-sanary-sur-mer">Sanary-sur-Mer</a></span><span>83110</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-saint-tropez">Saint-Tropez</a></span><span>83990</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-frejus">Fréjus</a></span><span>83600</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-saint-raphael">Saint-Raphaël</a></span><span>83700</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-brignoles">Brignoles</a></span><span>83170</span></li>
+          </ul>
+        </div>
+        <div class="dept">
+          <div class="dept-num">06</div>
+          <p class="dept-name">Alpes-Maritimes</p>
+          <p class="dept-coast">De Mandelieu à Menton</p>
+          <ul>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-nice">Nice</a></span><span>06000</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-cannes">Cannes</a></span><span>06400</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-antibes">Antibes</a></span><span>06600</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-saint-jean-cap-ferrat">Saint-Jean-Cap-Ferrat</a></span><span>06230</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-grasse">Grasse</a></span><span>06130</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-menton">Menton</a></span><span>06500</span></li>
+          </ul>
+        </div>
+        <div class="dept">
+          <div class="dept-num">84</div>
+          <p class="dept-name">Vaucluse</p>
+          <p class="dept-coast">Du Luberon au Ventoux</p>
+          <ul>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-avignon">Avignon</a></span><span>84000</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-carpentras">Carpentras</a></span><span>84200</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-orange">Orange</a></span><span>84100</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-cavaillon">Cavaillon</a></span><span>84300</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-l-isle-sur-la-sorgue">L'Isle-sur-la-Sorgue</a></span><span>84800</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-pertuis">Pertuis</a></span><span>84120</span></li>
+          </ul>
+        </div>
+        <div class="dept">
+          <div class="dept-num">34</div>
+          <p class="dept-name">Hérault</p>
+          <p class="dept-coast">De La Grande-Motte au Cap d'Agde</p>
+          <ul>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-montpellier">Montpellier</a></span><span>34000</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-beziers">Béziers</a></span><span>34500</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-sete">Sète</a></span><span>34200</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-agde">Agde · Cap d'Agde</a></span><span>34300</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-lunel">Lunel</a></span><span>34400</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-la-grande-motte">La Grande-Motte</a></span><span>34280</span></li>
+          </ul>
+        </div>
+        <div class="dept">
+          <div class="dept-num">69</div>
+          <p class="dept-name">Rhône</p>
+          <p class="dept-coast">Lyon et sa métropole</p>
+          <ul>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-lyon">Lyon</a></span><span>69001–09</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-villeurbanne">Villeurbanne</a></span><span>69100</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-venissieux">Vénissieux</a></span><span>69200</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-caluire-et-cuire">Caluire-et-Cuire</a></span><span>69300</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-ecully">Écully</a></span><span>69130</span></li>
+            <li><span><a class="city-link" href="/entreprise-de-nettoyage-bron">Bron</a></span><span>69500</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="territory-note">Nous intervenons aussi partout en France sur demande. Votre commune n'apparaît pas ? <a href="#devis">Indiquez-la dans votre demande</a>.</p>
+    </div>
+  </section>
+
+  <!-- Promises -->
+  <section class="block ivory promises-band band" id="engagements" aria-labelledby="engagements-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="label">Engagements</p>
+          <h2 id="engagements-title">Ce que nous vous <em>promettons</em>.</h2>
+        </div>
+        <p>Depuis plus de dix ans, du personnel qualifié, des produits professionnels et des méthodes éprouvées, adaptés à chaque intervention.</p>
+      </div>
+      <div class="promises">
+        <div class="promise">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M26 6C15 6 7 11 7 20c0 2 .3 3.4.8 4.6C17.6 24.6 26 19.6 26 6z"/><path d="M8 25c3.5-6 8-10 14-13"/></svg>
+          <h3>Produits certifiés &amp; éco-responsables</h3><p>Des produits professionnels certifiés, choisis pour limiter leur impact sans compromis sur le résultat.</p>
+        </div>
+        <div class="promise">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="11" r="4.5"/><path d="M4 26c1.2-4.6 4.4-6.8 8-6.8s6.8 2.2 8 6.8"/><path d="m20 15 2.5 2.5L28 12"/></svg>
+          <h3>Personnel formé &amp; qualifié</h3><p>Des équipes formées aux gestes et aux produits de chaque métier, qui connaissent vos lieux.</p>
+        </div>
+        <div class="promise">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M9 4h10l5 5v19H9z"/><path d="M19 4v5h5M13 15h7M13 20h7M13 25h4"/></svg>
+          <h3>Protocoles qualité stricts</h3><p>Un cahier des charges précis pour les locaux, un bon de collecte pour le linge, des contrôles réguliers.</p>
+        </div>
+        <div class="promise">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M16 4 6 8v8c0 6 4.4 10.4 10 12 5.6-1.6 10-6 10-12V8z"/><path d="m11.5 16 3 3 6-6.5"/></svg>
+          <h3>Suivi personnalisé</h3><p>Un interlocuteur unique qui reste joignable et ajuste la prestation avec vous.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers -->
+  <section class="block ivory band" id="carrieres" aria-labelledby="carrieres-title">
+    <div class="wrap careers">
+      <div>
+        <p class="label">Carrières</p>
+        <h2 id="carrieres-title">Rejoignez <em>nos équipes</em>.</h2>
+        <p class="intro">Nous recrutons pour accompagner notre croissance. Vous êtes motivé, rigoureux et attaché au travail bien fait ? Envoyez-nous votre candidature.</p>
+        <ul class="perks">
+          <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M16 27s-10-6-10-13a5.5 5.5 0 0 1 10-3.2A5.5 5.5 0 0 1 26 14c0 7-10 13-10 13z"/></svg><div><h3>Un cadre bienveillant</h3><p>Une équipe soudée et une direction à l'écoute de chacun.</p></div></li>
+          <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="11" cy="12" r="4"/><circle cx="22" cy="12" r="4"/><path d="M4 26c1-4 3.8-6 7-6s6 2 7 6M17 22c1-1.4 2.8-2 5-2 3.2 0 6 2 7 6"/></svg><div><h3>L'esprit d'équipe</h3><p>Une équipe dynamique et solidaire, où chaque collaborateur compte.</p></div></li>
+          <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M5 25 13 17l5 5 9-11"/><path d="M21 11h6v6"/></svg><div><h3>Évolution &amp; formation</h3><p>De vraies perspectives d'évolution et des formations pour développer vos compétences.</p></div></li>
+        </ul>
+      </div>
+      <div>
+        <form class="form" id="job-form" novalidate>
+          <p class="form-title">Postuler <em>maintenant</em></p>
+          <div class="row">
+            <div class="field"><label for="j-prenom">Prénom</label><input id="j-prenom" name="prenom" autocomplete="given-name" required></div>
+            <div class="field"><label for="j-nom">Nom</label><input id="j-nom" name="nom" autocomplete="family-name" required></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="j-email">E-mail</label><input id="j-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="j-tel">Téléphone</label><input id="j-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+          </div>
+          <div class="field">
+            <label for="j-poste">Poste recherché</label>
+            <select id="j-poste" name="poste">
+              <option>Agent(e) de propreté</option>
+              <option>Agent(e) de blanchisserie</option>
+              <option>Laveur(se) de vitres</option>
+              <option>Chef(fe) d'équipe</option>
+              <option>Candidature spontanée</option>
+            </select>
+          </div>
+          <div class="field"><label for="j-cv">Lien vers votre CV <span class="opt">(Google Drive, Dropbox…)</span></label><input id="j-cv" name="cv" type="url" placeholder="https://"></div>
+          <div class="field"><label for="j-message">Message <span class="opt">(facultatif)</span></label><textarea id="j-message" name="message" placeholder="Votre expérience, vos disponibilités, votre secteur…"></textarea></div>
+          <p class="error" id="job-error" role="alert" hidden></p>
+          <div class="form-foot">
+            <small>Nous revenons vers vous dans les meilleurs délais.</small>
+            <button class="btn btn-gold" type="submit">Envoyer ma candidature
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </form>
+        <div class="recap" id="job-recap" hidden tabindex="-1">
+          <p class="label">Candidature préparée</p>
+          <h3>Merci, <em id="job-recap-name"></em>.</h3>
+          <p>Copiez ce récapitulatif et adressez-le à contact@groupe-aveli.fr avec votre CV.</p>
+          <pre id="job-recap-text"></pre>
+          <div class="recap-actions">
+            <button class="btn btn-gold" type="button" id="job-copy">Copier le récapitulatif</button>
+            <button class="btn btn-line-light" type="button" id="job-edit">Modifier</button>
+          </div>
+          <p id="job-copy-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="block navy band" id="devis" aria-labelledby="devis-title"><span id="contact" class="anchor" aria-hidden="true"></span>
+    <div class="wrap contact">
+      <div>
+        <p class="label">Contact &amp; devis gratuit</p>
+        <h2 id="devis-title">Parlons de votre <em>besoin</em>.</h2>
+        <p class="intro">Blanchisserie, nettoyage de locaux ou les deux : appelez-nous, écrivez-nous ou laissez vos coordonnées. Un conseiller vous rappelle.</p>
+        <p class="promise-line"><span>Réponse sous 24 h</span><span>Devis gratuit sous 48 h</span><span>Sans engagement</span></p>
+        <ul class="ways">
+          <li class="way"><a href="tel:+33980868166"><span class="way-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.8 4.4-2.2 1.4a11 11 0 0 0 6.1 6.1l1.4-2.2L20 15.5V19a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg></span><span><span class="k">Appelez-nous</span><span class="v">09 80 86 81 66</span></span><svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></li>
+          <li class="way"><a href="mailto:contact@groupe-aveli.fr"><span class="way-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13"/><path d="m4 6.5 8 6 8-6"/></svg></span><span><span class="k">Écrivez-nous</span><span class="v">contact@groupe-aveli.fr</span></span><svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></li>
+          <li class="way"><div><span class="way-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span><span class="k">Nous sommes là</span><span class="v">Lun – Sam · 8 h – 19 h</span></span><span></span></div></li>
+        </ul>
+      </div>
+
+      <div class="qcard">
+        <div id="quote-start">
+          <h3>Devis <em>gratuit</em></h3>
+        </div>
+        <form class="qform" id="quote-form" novalidate>
+          <fieldset class="field">
+            <legend>Votre besoin</legend>
+            <div class="choice">
+              <label><input type="radio" name="besoin" id="b-linge" value="Blanchisserie"><span>Blanchisserie</span></label>
+              <label><input type="radio" name="besoin" id="b-prop" value="Nettoyage" checked><span>Nettoyage</span></label>
+              <label><input type="radio" name="besoin" id="b-deux" value="Blanchisserie et nettoyage"><span>Les deux</span></label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="f-nom">Nom et prénom</label><input id="f-nom" name="nom" autocomplete="name" placeholder="Marie Dupont" required></div>
+          <div class="row">
+            <div class="field"><label for="f-tel">Téléphone</label><input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" placeholder="06 12 34 56 78"></div>
+            <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr"></div>
+          </div>
+          <div class="field"><label for="f-ville">Ville ou code postal</label><input id="f-ville" name="ville" autocomplete="address-level2" placeholder="Marseille, 06400, Lyon…"></div>
+          <div class="field"><label for="f-message">Votre message <span class="opt">(facultatif)</span></label><textarea id="f-message" name="message" placeholder="Type de lieu ou de linge, surface, fréquence souhaitée…"></textarea></div>
+          <p class="qerror" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-navy" type="submit">Recevoir mon devis gratuit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </button>
+          <p class="qnote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Vos coordonnées servent uniquement à vous répondre.</p>
+        </form>
+        <div class="qdone" id="recap" hidden tabindex="-1">
+          <h3>Merci, <em id="recap-name"></em>.</h3>
+          <p>Votre demande est prête. Copiez ce récapitulatif et envoyez-le à contact@groupe-aveli.fr, ou appelez-nous au 09 80 86 81 66.</p>
+          <pre id="recap-text"></pre>
+          <div class="recap-actions">
+            <button class="btn btn-navy" type="button" id="copy-recap">Copier</button>
+            <button class="btn btn-outline-navy" type="button" id="edit-recap">Modifier</button>
+          </div>
+          <p class="qnote" id="copy-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer navy band">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#accueil" aria-label="Groupe Aveli, retour en haut"><span class="brand-text"><span class="brand-word">AVELI</span><span class="brand-sub">Groupe · Blanchisserie &amp; Propreté</span></span></a>
+        <p class="tag">Pour des espaces plus sains au quotidien.</p>
+      </div>
+      <div><h4>Blanchisserie</h4><ul><li><a href="#metiers">Hôtellerie &amp; restauration</a></li><li><a href="#metiers">Locations saisonnières</a></li><li><a href="#metiers">Vêtements de travail</a></li><li><a href="#metiers">Particuliers</a></li></ul></div>
+      <div><h4>Propreté</h4><ul><li><a href="#metiers">Bureaux &amp; commerces</a></li><li><a href="#metiers">Copropriétés</a></li><li><a href="#metiers">Villas &amp; logements</a></li><li><a href="#secteurs">Hôtels &amp; campings</a></li><li><a href="#secteurs">Traitement des sols</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>09 80 86 81 66</li><li>contact@groupe-aveli.fr</li><li>Lun – Sam · 8 h – 19 h</li><li><a href="#carrieres">Nous rejoindre</a></li><li><a href="#territoire">13 · 83 · 06 · 84 · 34 · 69</a></li><li><a href="#devis">Devis gratuit</a></li></ul></div>
+    </div>
+    <nav class="foot-cities" aria-label="Nos villes"><h4>Entreprise de nettoyage dans nos villes</h4><div class="fc-grid"><div><p>Bouches-du-Rhône · 13</p><ul><li><a href="/entreprise-de-nettoyage-marseille">Marseille</a></li><li><a href="/entreprise-de-nettoyage-aix-en-provence">Aix-en-Provence</a></li><li><a href="/entreprise-de-nettoyage-aubagne">Aubagne</a></li><li><a href="/entreprise-de-nettoyage-cassis">Cassis</a></li><li><a href="/entreprise-de-nettoyage-la-ciotat">La Ciotat</a></li><li><a href="/entreprise-de-nettoyage-salon-de-provence">Salon-de-Provence</a></li><li><a href="/entreprise-de-nettoyage-gardanne">Gardanne</a></li><li><a href="/entreprise-de-nettoyage-meyreuil">Meyreuil</a></li></ul></div><div><p>Var · 83</p><ul><li><a href="/entreprise-de-nettoyage-toulon">Toulon</a></li><li><a href="/entreprise-de-nettoyage-hyeres">Hyères</a></li><li><a href="/entreprise-de-nettoyage-sanary-sur-mer">Sanary-sur-Mer</a></li><li><a href="/entreprise-de-nettoyage-saint-tropez">Saint-Tropez</a></li><li><a href="/entreprise-de-nettoyage-frejus">Fréjus</a></li><li><a href="/entreprise-de-nettoyage-saint-raphael">Saint-Raphaël</a></li><li><a href="/entreprise-de-nettoyage-brignoles">Brignoles</a></li></ul></div><div><p>Alpes-Maritimes · 06</p><ul><li><a href="/entreprise-de-nettoyage-nice">Nice</a></li><li><a href="/entreprise-de-nettoyage-cannes">Cannes</a></li><li><a href="/entreprise-de-nettoyage-antibes">Antibes</a></li><li><a href="/entreprise-de-nettoyage-saint-jean-cap-ferrat">Saint-Jean-Cap-Ferrat</a></li><li><a href="/entreprise-de-nettoyage-grasse">Grasse</a></li><li><a href="/entreprise-de-nettoyage-menton">Menton</a></li></ul></div><div><p>Vaucluse · 84</p><ul><li><a href="/entreprise-de-nettoyage-avignon">Avignon</a></li><li><a href="/entreprise-de-nettoyage-carpentras">Carpentras</a></li><li><a href="/entreprise-de-nettoyage-orange">Orange</a></li><li><a href="/entreprise-de-nettoyage-cavaillon">Cavaillon</a></li><li><a href="/entreprise-de-nettoyage-l-isle-sur-la-sorgue">L&#x27;Isle-sur-la-Sorgue</a></li><li><a href="/entreprise-de-nettoyage-pertuis">Pertuis</a></li></ul></div><div><p>Hérault · 34</p><ul><li><a href="/entreprise-de-nettoyage-montpellier">Montpellier</a></li><li><a href="/entreprise-de-nettoyage-beziers">Béziers</a></li><li><a href="/entreprise-de-nettoyage-sete">Sète</a></li><li><a href="/entreprise-de-nettoyage-agde">Agde</a></li><li><a href="/entreprise-de-nettoyage-lunel">Lunel</a></li><li><a href="/entreprise-de-nettoyage-la-grande-motte">La Grande-Motte</a></li></ul></div><div><p>Rhône · 69</p><ul><li><a href="/entreprise-de-nettoyage-lyon">Lyon</a></li><li><a href="/entreprise-de-nettoyage-villeurbanne">Villeurbanne</a></li><li><a href="/entreprise-de-nettoyage-venissieux">Vénissieux</a></li><li><a href="/entreprise-de-nettoyage-caluire-et-cuire">Caluire-et-Cuire</a></li><li><a href="/entreprise-de-nettoyage-ecully">Écully</a></li><li><a href="/entreprise-de-nettoyage-bron">Bron</a></li></ul></div></div></nav>
+    <div class="legal">
+      <span>© <span id="year">2026</span> Groupe Aveli · SIRET 823 535 587 00026</span>
+      <span>Mentions légales · Confidentialité</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-bar" id="mobile-bar" aria-label="Contact rapide">
+  <a class="btn btn-navy" href="#devis">Devis gratuit</a>
+  <a class="btn btn-call" href="tel:+33980868166" aria-label="Appeler le 09 80 86 81 66">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.8 4.4-2.2 1.4a11 11 0 0 0 6.1 6.1l1.4-2.2L20 15.5V19a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>Appeler
+  </a>
+</nav>
+<button class="contact-fab" id="contact-fab" type="button" aria-expanded="false" aria-controls="contact-panel">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>
+  <span class="fab-text">Nous contacter</span>
+</button>
+<div class="contact-panel" id="contact-panel" role="dialog" aria-labelledby="contact-panel-title" hidden>
+  <div class="contact-panel-head">
+    <div>
+      <h2 id="contact-panel-title">Une question, <em>un devis</em> ?</h2>
+      <p class="sub">Du lundi au samedi, de 8 h à 19 h. Réponse sous 24 h.</p>
+    </div>
+    <button class="panel-close" id="panel-close" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <ul class="channels">
+    <li class="channel"><span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.8 4.4-2.2 1.4a11 11 0 0 0 6.1 6.1l1.4-2.2L20 15.5V19a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg></span><span><span class="k">Téléphone</span><a class="v" href="tel:+33980868166">09 80 86 81 66</a></span><button class="copy" type="button" data-copy="09 80 86 81 66" aria-label="Copier le numéro" title="Copier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11"/><path d="M15.5 8.5v-4h-11v11h4"/></svg></button></li>
+    <li class="channel"><span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13"/><path d="m4 6.5 8 6 8-6"/></svg></span><span><span class="k">E-mail</span><a class="v" href="mailto:contact@groupe-aveli.fr">contact@groupe-aveli.fr</a></span><button class="copy" type="button" data-copy="contact@groupe-aveli.fr" aria-label="Copier l'adresse e-mail" title="Copier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11"/><path d="M15.5 8.5v-4h-11v11h4"/></svg></button></li>
+    <li class="channel"><span class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span><span class="k">Horaires</span><span class="v">Lun – Sam · 8 h – 19 h</span></span><span></span></li>
+  </ul>
+  <a class="btn btn-navy panel-cta" href="#devis" id="panel-quote">Demander un devis gratuit</a>
+  <p class="panel-status" id="panel-status" aria-live="polite"></p>
+</div>
+
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
