@@ -19,7 +19,7 @@ ton, couleurs, polices, coordonnées, pages prévues, ce qui reste à compléter
 - Nom technique : `groupe-aveli`
 - Activité : blanchisserie professionnelle et propreté de locaux (entreprises, hôtels,
   campings, locations saisonnières, particuliers). SIRET 823 535 587 00026.
-- Coordonnées : 09 80 86 81 66, contact@groupe-aveli.fr, lun.–sam. 8 h–19 h.
+- Coordonnées : 09 80 86 81 66 (fixe), 07 63 59 92 27 (portable, ajouté le 10/11/2026), contact@groupe-aveli.fr, lun.–sam. 8 h–19 h.
 - Domaine : groupe-aveli.fr (acheté chez OVH, DNS chez OVH, site sur Vercel ; www redirige vers groupe-aveli.fr). Le site prestige-nettoyage.fr
   reste en ligne à part : ne pas le rediriger.
 - Design (refonte de novembre 2026) : fond papier clair (#FBFAF7) et sable (#F3EFE7), bleu
