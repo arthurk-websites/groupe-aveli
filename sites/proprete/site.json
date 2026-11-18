@@ -1,0 +1,82 @@
+{
+  "sous": "Entreprise de nettoyage",
+  "accroche": "Des lieux nets, entretenus par des équipes qui les connaissent.",
+  "couleurs": {
+    "accent": "#8CC09A",
+    "gold": "#5E8C6A",
+    "gold-ink": "#3F6B4C",
+    "gold-pale": "#B5D3BC"
+  },
+  "image": "/assets/img/9b07d67245f5.jpg",
+  "devis": "/#devis",
+  "piedExtra": "_villes.html",
+  "nav": [
+    [
+      "Prestations",
+      "/#prestations"
+    ],
+    [
+      "Secteurs",
+      "/#secteurs"
+    ],
+    [
+      "Méthode",
+      "/#methode"
+    ],
+    [
+      "Nos villes",
+      "/#territoire"
+    ],
+    [
+      "Questions",
+      "/#questions"
+    ],
+    [
+      "Contact",
+      "/#devis"
+    ]
+  ],
+  "pied": [
+    {
+      "titre": "Aveli Propreté",
+      "liens": [
+        [
+          "Nos prestations",
+          "/#prestations"
+        ],
+        [
+          "Secteurs",
+          "/#secteurs"
+        ],
+        [
+          "Notre méthode",
+          "/#methode"
+        ],
+        [
+          "Nos villes",
+          "/#territoire"
+        ],
+        [
+          "Questions fréquentes",
+          "/#questions"
+        ]
+      ]
+    }
+  ],
+  "llms": {
+    "resume": "Aveli Propreté est l'entreprise de nettoyage du Groupe Aveli : entretien régulier et interventions ponctuelles pour les bureaux, commerces, copropriétés, hôtels, campings, collectivités, villas et logements, dans 39 villes de Provence, de la Côte d'Azur, de l'Hérault et du Rhône.",
+    "details": [
+      "Prestations : nettoyage de bureaux et commerces, parties communes de copropriétés, hôtels et campings, fin de chantier, vitrerie, traitement des sols (parquets, marbre), nettoyage événementiel et industriel.",
+      "Cahier des charges écrit avec le client, produits professionnels certifiés et éco-responsables, contrôles réguliers.",
+      "Zone : Bouches-du-Rhône (13), Var (83), Alpes-Maritimes (06), Vaucluse (84), Hérault (34), Rhône (69).",
+      "Devis gratuit sous 48 h, réponse sous 24 h, du lundi au samedi de 8 h à 19 h.",
+      "La blanchisserie (linge hôtelier, locations) est assurée par Aveli Blanchisserie, l'autre société du groupe."
+    ],
+    "sections": [
+      {
+        "titre": "Entreprise de nettoyage par ville",
+        "motif": "^entreprise-de-nettoyage-"
+      }
+    ]
+  }
+}

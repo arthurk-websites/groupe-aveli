@@ -1,0 +1,74 @@
+{
+  "sous": "Blanchisserie & propreté",
+  "accroche": "Pour des espaces plus sains au quotidien.",
+  "couleurs": {
+    "accent": "#C9A05A",
+    "gold": "#B8893D",
+    "gold-ink": "#8A6322",
+    "gold-pale": "#E3C68E"
+  },
+  "image": "/assets/img/965dd5a7d8fc.jpg",
+  "devis": "/#devis",
+  "nav": [
+    [
+      "Nos sociétés",
+      "/#societes"
+    ],
+    [
+      "Le groupe",
+      "/#groupe"
+    ],
+    [
+      "Références",
+      "/#references"
+    ],
+    [
+      "Territoire",
+      "/#territoire"
+    ],
+    [
+      "Carrières",
+      "/#carrieres"
+    ],
+    [
+      "Contact",
+      "/#devis"
+    ]
+  ],
+  "pied": [
+    {
+      "titre": "Groupe Aveli",
+      "liens": [
+        [
+          "Nos sociétés",
+          "/#societes"
+        ],
+        [
+          "Pourquoi un groupe",
+          "/#groupe"
+        ],
+        [
+          "Références",
+          "/#references"
+        ],
+        [
+          "Territoire",
+          "/#territoire"
+        ],
+        [
+          "Nous rejoindre",
+          "/#carrieres"
+        ]
+      ]
+    }
+  ],
+  "llms": {
+    "resume": "Groupe Aveli réunit deux sociétés de services aux entreprises et aux particuliers, du Rhône à la Méditerranée : Aveli Blanchisserie (blanchisserie professionnelle) et Aveli Propreté (nettoyage de locaux). Un seul interlocuteur pour le linge et l'entretien des lieux.",
+    "details": [
+      "Zone : Bouches-du-Rhône (13), Var (83), Alpes-Maritimes (06), Vaucluse (84), Hérault (34), Rhône (69), et ailleurs en France sur demande.",
+      "Clients : hôtels, campings, résidences de tourisme, locations saisonnières, bureaux, commerces, copropriétés, collectivités, particuliers.",
+      "Devis gratuit sous 48 h, réponse sous 24 h, du lundi au samedi de 8 h à 19 h.",
+      "Ce site présente le groupe ; le détail des offres est sur les sites de chaque société (liens ci-dessous)."
+    ]
+  }
+}

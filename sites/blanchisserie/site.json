@@ -1,0 +1,79 @@
+{
+  "sous": "Blanchisserie professionnelle",
+  "accroche": "Du linge propre, compté et livré à l'heure.",
+  "couleurs": {
+    "accent": "#7FB0DC",
+    "gold": "#4A7FB0",
+    "gold-ink": "#2F5F8C",
+    "gold-pale": "#A9C8E6"
+  },
+  "image": "/assets/img/7260c1230822.jpg",
+  "devis": "/#devis",
+  "nav": [
+    [
+      "Prestations",
+      "/#prestations"
+    ],
+    [
+      "Le parcours du linge",
+      "/#parcours"
+    ],
+    [
+      "Secteurs",
+      "/#secteurs"
+    ],
+    [
+      "Zone",
+      "/#zone"
+    ],
+    [
+      "Questions",
+      "/#questions"
+    ],
+    [
+      "Contact",
+      "/#devis"
+    ]
+  ],
+  "pied": [
+    {
+      "titre": "Aveli Blanchisserie",
+      "liens": [
+        [
+          "Linge hôtelier",
+          "/linge-hotelier"
+        ],
+        [
+          "Locations saisonnières",
+          "/linge-locations-saisonnieres"
+        ],
+        [
+          "Vêtements de travail",
+          "/vetements-de-travail"
+        ],
+        [
+          "Le parcours du linge",
+          "/#parcours"
+        ],
+        [
+          "Zone d'intervention",
+          "/#zone"
+        ],
+        [
+          "Questions fréquentes",
+          "/#questions"
+        ]
+      ]
+    }
+  ],
+  "llms": {
+    "resume": "Aveli Blanchisserie est la blanchisserie professionnelle du Groupe Aveli : collecte, lavage, séchage, repassage, pliage et livraison du linge des hôtels, campings, résidences de tourisme, locations saisonnières, restaurants et entreprises, en Provence, sur la Côte d'Azur, dans l'Hérault et dans le Rhône.",
+    "details": [
+      "Linge traité : draps, housses, taies, linge de bain, peignoirs, nappes, serviettes de table, tenues et vêtements de travail, linge des particuliers.",
+      "Linge compté à l'enlèvement et à la livraison, lessives éco-responsables, délais convenus à l'avance.",
+      "Zone : Bouches-du-Rhône (13), Var (83), Alpes-Maritimes (06), Vaucluse (84), Hérault (34), Rhône (69).",
+      "Devis gratuit sous 48 h, réponse sous 24 h, du lundi au samedi de 8 h à 19 h.",
+      "Le nettoyage des locaux est assuré par Aveli Propreté, l'autre société du groupe."
+    ]
+  }
+}

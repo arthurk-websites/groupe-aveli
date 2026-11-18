@@ -1,11 +1,5 @@
-# Groupe Aveli
+# Groupe Aveli : trois sites, un seul code
 
-Site statique hébergé sur Vercel.
-
-- `index.html` et les autres pages `*.html` à la racine (`contact.html` est servi à `/contact`)
-- `assets/css/`, `assets/js/`, `assets/img/`
-- `404.html` : page affichée pour une adresse inconnue
-- `vercel.json` : réglages Vercel (adresses sans `.html`)
-
-Pas de build ni de dépendances : on modifie les fichiers et on pousse. `main` met en
-ligne, les autres branches donnent un lien d'aperçu.
+- groupe-aveli.fr, aveli-blanchisserie.fr et aveli-proprete.fr sont construits depuis ce
+  repo par `outils/construire.cjs` (un projet Vercel par site, variable `SITE`).
+- Voir `CLAUDE.md` pour l'organisation des fichiers.

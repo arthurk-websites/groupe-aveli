@@ -1,0 +1,15 @@
+{
+  "contact": {
+    "tel": "09 80 86 81 66",
+    "telLien": "+33980868166",
+    "email": "contact@groupe-aveli.fr",
+    "horaires": "Lun – Sam · 8 h – 19 h",
+    "siret": "823 535 587 00026",
+    "societe": "Groupe Aveli"
+  },
+  "sites": [
+    { "id": "groupe", "nom": "Groupe Aveli", "domaine": "groupe-aveli.fr", "role": "Le groupe : blanchisserie et propreté, un seul interlocuteur" },
+    { "id": "blanchisserie", "nom": "Aveli Blanchisserie", "domaine": "aveli-blanchisserie.fr", "role": "Blanchisserie professionnelle : linge hôtelier, locations, tenues de travail" },
+    { "id": "proprete", "nom": "Aveli Propreté", "domaine": "aveli-proprete.fr", "role": "Entreprise de nettoyage : bureaux, copropriétés, hôtels, campings" }
+  ]
+}
