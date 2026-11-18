@@ -4,12 +4,31 @@
     "telLien": "+33980868166",
     "email": "contact@groupe-aveli.fr",
     "horaires": "Lun – Sam · 8 h – 19 h",
-    "siret": "823 535 587 00026",
-    "societe": "Groupe Aveli"
+    "societe": "Groupe Aveli",
+    "mobile": "07 63 59 92 27",
+    "mobileLien": "+33763599227",
+    "rue": "12 rue Jules Ferry",
+    "cp": "83170",
+    "ville": "Brignoles"
   },
   "sites": [
-    { "id": "groupe", "nom": "Groupe Aveli", "domaine": "groupe-aveli.fr", "role": "Le groupe : blanchisserie et propreté, un seul interlocuteur" },
-    { "id": "blanchisserie", "nom": "Aveli Blanchisserie", "domaine": "aveli-blanchisserie.fr", "role": "Blanchisserie professionnelle : linge hôtelier, locations, tenues de travail" },
-    { "id": "proprete", "nom": "Aveli Propreté", "domaine": "aveli-proprete.fr", "role": "Entreprise de nettoyage : bureaux, copropriétés, hôtels, campings" }
+    {
+      "id": "groupe",
+      "nom": "Groupe Aveli",
+      "domaine": "groupe-aveli.fr",
+      "role": "Le groupe : blanchisserie et propreté, un seul interlocuteur"
+    },
+    {
+      "id": "blanchisserie",
+      "nom": "Aveli Blanchisserie",
+      "domaine": "aveli-blanchisserie.fr",
+      "role": "Blanchisserie professionnelle : linge hôtelier, locations, tenues de travail"
+    },
+    {
+      "id": "proprete",
+      "nom": "Aveli Propreté",
+      "domaine": "aveli-proprete.fr",
+      "role": "Entreprise de nettoyage : bureaux, copropriétés, hôtels, campings"
+    }
   ]
 }

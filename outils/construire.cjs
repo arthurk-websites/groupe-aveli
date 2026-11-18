@@ -106,7 +106,7 @@ const ENTETE = `<a class="skip" href="#contenu">Aller au contenu</a>
 
 const autres = RESEAU.sites.filter((s) => s.id !== SITE_ID);
 const colonnes = SITE.pied.map((c) => `<div><h4>${esc(c.titre)}</h4><ul>${c.liens.map(([t, h]) => `<li><a href="${h}">${esc(t)}</a></li>`).join("")}</ul></div>`).join("\n      ");
-const reseau = `<div><h4>Le groupe Aveli</h4><ul>${autres.map((s) => `<li><a href="https://${s.domaine}/">${esc(s.nom)}<span class="foot-sub">${esc(s.role)}</span></a></li>`).join("")}</ul></div>\n      <div><h4>Contact</h4><ul><li><a href="tel:${C.telLien}">${C.tel}</a></li><li><a href="mailto:${C.email}">${C.email}</a></li><li>${esc(C.horaires)}</li><li><a href="${SITE.devis}">Devis gratuit</a></li></ul></div>`;
+const reseau = `<div><h4>Le groupe Aveli</h4><ul>${autres.map((s) => `<li><a href="https://${s.domaine}/">${esc(s.nom)}<span class="foot-sub">${esc(s.role)}</span></a></li>`).join("")}</ul></div>\n      <div><h4>Contact</h4><ul><li><a href="tel:${C.telLien}">${C.tel}</a> · <a href="tel:${C.mobileLien}">${C.mobile}</a></li><li><a href="mailto:${C.email}">${C.email}</a></li><li>${esc(C.horaires)}</li><li>${esc(C.rue)}, ${C.cp} ${esc(C.ville)}</li><li><a href="${SITE.devis}">Devis gratuit</a></li></ul></div>`;
 const extra = SITE.piedExtra ? fs.readFileSync(path.join(DOSSIER, SITE.piedExtra), "utf8").trim() : "";
 
 const PIED = `<footer class="site-footer navy band">
@@ -121,7 +121,7 @@ const PIED = `<footer class="site-footer navy band">
     </div>
     ${extra}
     <div class="legal">
-      <span>© <span id="year">${new Date().getFullYear()}</span> ${esc(SITE.nom)} · SIRET ${C.siret}</span>
+      <span>© <span id="year">${new Date().getFullYear()}</span> ${esc(SITE.nom)} · Groupe Aveli, ${esc(C.rue)}, ${C.cp} ${esc(C.ville)}</span>
       <span><a href="/mentions-legales">Mentions légales et confidentialité</a></span>
     </div>
   </div>
@@ -177,12 +177,21 @@ for (const [f, src] of [...pages].sort()) {
   const slug = f === "index.html" ? "" : f.replace(/\.html$/, "");
   const page = { slug, noindex: f === "404.html" || /<!-- @noindex -->/.test(html) };
   html = html.replace(/\{\{(\w+)\}\}/g, (m, k) => {
-    const valeurs = { nom: SITE.nom, sous: SITE.sous, domaine: SITE.domaine, url: URL_SITE, tel: C.tel, telLien: C.telLien, email: C.email, horaires: C.horaires, siret: C.siret, societe: C.societe, devis: SITE.devis };
+    const valeurs = { nom: SITE.nom, sous: SITE.sous, domaine: SITE.domaine, url: URL_SITE, tel: C.tel, telLien: C.telLien, mobile: C.mobile, mobileLien: C.mobileLien, adresse: `${C.rue}, ${C.cp} ${C.ville}`, email: C.email, horaires: C.horaires, societe: C.societe, devis: SITE.devis };
     if (k in valeurs) return esc(valeurs[k]);
     const s = RESEAU.sites.find((x) => x.id === k);
     if (s) return `https://${s.domaine}`;
     erreurs.push(`${f} : jeton inconnu ${m}`);
     return m;
+  });
+  html = html.replace(/<script type="application\/ld\+json">(.*?)<\/script>/gs, (m, j) => {
+    let o; try { o = JSON.parse(j); } catch { erreurs.push(`${f} : JSON-LD invalide`); return m; }
+    if (["LocalBusiness", "Organization"].includes(o["@type"])) {
+      o.address = { "@type": "PostalAddress", streetAddress: C.rue, postalCode: C.cp, addressLocality: C.ville, addressCountry: "FR" };
+      o.telephone = "+33 9 80 86 81 66";
+      o.contactPoint = [{ "@type": "ContactPoint", telephone: "+33 7 63 59 92 27", contactType: "customer service", areaServed: "FR", availableLanguage: "French" }];
+    }
+    return `<script type="application/ld+json">${JSON.stringify(o)}</script>`;
   });
   html = html.replace("<!-- @noindex -->", "");
   html = html.replace("<!-- @tete -->", () => tete(page, html));
@@ -226,7 +235,7 @@ fs.writeFileSync(path.join(SORTIE, "llms.txt"),
   `## Pages\n\n${principales.map(ligne).join("\n")}\n\n` +
   groupes.map((g) => `## ${g.titre}\n\n${g.pages.map(ligne).join("\n")}\n\n`).join("") +
   `## Les autres sites du groupe\n\n${autres.map((s) => `- [${s.nom}](https://${s.domaine}/): ${s.role}`).join("\n")}\n\n` +
-  `## Contact\n\n- Téléphone : ${C.tel}\n- E-mail : ${C.email}\n- Horaires : ${C.horaires}\n- Devis gratuit et sans engagement : ${URL_SITE}${SITE.devis.replace(/^\//, "/")}\n`);
+  `## Contact\n\n- Téléphone : ${C.tel} (fixe), ${C.mobile} (portable)\n- Adresse : Groupe Aveli, ${C.rue}, ${C.cp} ${C.ville}\n- E-mail : ${C.email}\n- Horaires : ${C.horaires}\n- Devis gratuit et sans engagement : ${URL_SITE}${SITE.devis.replace(/^\//, "/")}\n`);
 
 if (erreurs.length) {
   console.error("Problèmes :\n- " + erreurs.join("\n- "));

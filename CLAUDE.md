@@ -49,8 +49,9 @@ ton, couleurs, polices, coordonnées, pages prévues, ce qui reste à compléter
   à chaque site : or (groupe), bleu (blanchisserie), vert sauge (propreté). Générés par
   le script de construction.
 - Activité : blanchisserie professionnelle et propreté de locaux (entreprises, hôtels,
-  campings, locations saisonnières, particuliers). SIRET 823 535 587 00026.
-- Coordonnées : 09 80 86 81 66, contact@groupe-aveli.fr, lun.–sam. 8 h–19 h.
+  campings, locations saisonnières, particuliers). Pas encore de SIRET (immatriculation en cours, nov. 2026) : n'en afficher aucun.
+- Coordonnées (dans `commun/reseau.json`) : Groupe Aveli, 12 rue Jules Ferry, 83170 Brignoles ;
+  fixe 09 80 86 81 66, portable 07 63 59 92 27 ; contact@groupe-aveli.fr ; lun.–sam. 8 h–19 h.
 - Domaine : groupe-aveli.fr (acheté chez OVH, DNS chez OVH, site sur Vercel ; www redirige vers groupe-aveli.fr). Le site prestige-nettoyage.fr
   reste en ligne à part : ne pas le rediriger.
 - Design (refonte de novembre 2026) : fond papier clair (#FBFAF7) et sable (#F3EFE7), bleu
@@ -67,5 +68,5 @@ ton, couleurs, polices, coordonnées, pages prévues, ce qui reste à compléter
 - Photos : photos libres (Pexels) ; pour certaines petites villes, la photo montre un
   lieu proche et la légende le dit.
 - Reste à faire : brancher les formulaires de devis et de candidature (ils préparent un
-  récapitulatif à copier mais n'envoient rien) ; mentions légales : raison sociale, adresse du siège
-  et directeur de la publication (marqués « [À compléter] »).
+  récapitulatif à copier mais n'envoient rien) ; mentions légales : directeur de la publication
+  (« [À compléter] ») et SIRET quand il existera.
